@@ -40,9 +40,9 @@ public class ApplicationAnalyser {
                     this.logger.warn(" No files with extension " + sourceFileExtension + " found at path: " + projectPath);
                 } else {
 	                for (MetaFile sourceFileInfo : fileData) {
-	                    if (!ServiceProvider.getInstance().getControlService().getStates().contains(States.ANALYSING)) {
-	                        break;
-	                    }
+	                    //if (!ServiceProvider.getInstance().getControlService().getStates().contains(States.ANALYSING)) {
+	                    //    break;
+	                    //}
 	                    analyser.analyseSourceFile(projectPath, sourceFileInfo.getPath());
 	                }
                 }

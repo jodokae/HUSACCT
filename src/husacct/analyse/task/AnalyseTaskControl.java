@@ -38,10 +38,10 @@ public class AnalyseTaskControl {
      }
 
     public void analyseApplication(String[] paths, String programmingLanguage) {
-    	queryService.clearModel();
+    	//queryService.clearModel();
         analyserService.analyseApplication(paths, programmingLanguage);
-        queryService.buildCache();
-        this.isAnalysed = true;
+        //queryService.buildCache();
+        //this.isAnalysed = true;
         // this.logger.info(new Date().toString() + " Finished: Analyse Application; ServiceListeners notified; State isAnalysed = true");
     }
 

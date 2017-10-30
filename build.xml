@@ -73,7 +73,7 @@
 	</target>
 
 	<!-- Create runnable Jars -->
-	<target name="jar" depends="sacc">
+	<target name="jar" depends="extractlib">
 		<mkdir dir="${jar.dir}"/>
 		<jar destfile="${jar.dir}/${ant.project.name}.jar" basedir="${bin.dir}" excludes="husaccttest/**">
 			<manifest>

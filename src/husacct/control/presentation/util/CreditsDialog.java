@@ -34,11 +34,11 @@ public class CreditsDialog extends JDialog {
 	private JButton okButton;
 	private GridBagConstraints constraint = new GridBagConstraints();
 
-	private ILocaleService localeService = ServiceProvider.getInstance().getLocaleService();
+	//private ILocaleService localeService = ServiceProvider.getInstance().getLocaleService();
 
 	public CreditsDialog(MainController mainController) {
 		super(mainController.getMainGui(), true);
-		setTitle(localeService.getTranslatedString("Credits"));
+		//setTitle(localeService.getTranslatedString("Credits"));
 		setup();
 		addComponents();
 		setListeners();
@@ -92,7 +92,7 @@ public class CreditsDialog extends JDialog {
 		
 		textPanel3 = new JPanel();
 		textPanel3.setLayout(new GridBagLayout());
-		developerLabelDescription = new JLabel(localeService.getTranslatedString("Developers") + ":");
+		//developerLabelDescription = new JLabel(localeService.getTranslatedString("Developers") + ":");
 		developerLabelDescription.setFont(new Font("Arial", Font.BOLD, 14));
 		developersLabel = new JTextArea("\n" + getCreditsDevelopers());
 		developersLabel.setLineWrap(true);
@@ -111,7 +111,7 @@ public class CreditsDialog extends JDialog {
 
 		buttonPanel = new JPanel();
 		buttonPanel.setPreferredSize(new Dimension(400,70));
-		okButton = new JButton(localeService.getTranslatedString("Close"));
+		//okButton = new JButton(localeService.getTranslatedString("Close"));
 		buttonPanel.add(okButton);
 
 		add(textPanel1);

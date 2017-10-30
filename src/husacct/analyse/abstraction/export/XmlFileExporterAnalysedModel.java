@@ -32,9 +32,9 @@ public class XmlFileExporterAnalysedModel {
     }
 
     private void writeApplicationElement() {
-		ApplicationDTO applicationDTO = ServiceProvider.getInstance().getDefineService().getApplicationDetails();
+		//ApplicationDTO applicationDTO = ServiceProvider.getInstance().getDefineService().getApplicationDetails();
 		applicationElement = new Element("Application");
-		applicationElement.addContent(new Element("ApplicationName").setText(applicationDTO.name));
+		applicationElement.addContent(new Element("ApplicationName").setText("ApplicationName"));
     }
     
     public void writePackageToXml(PackageDTO dto) {

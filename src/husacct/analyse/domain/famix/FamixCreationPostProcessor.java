@@ -143,9 +143,9 @@ class FamixCreationPostProcessor {
             	}
             	calculateProgress();
                 //Needed to check if Thread is allowed to continue
-                if (!ServiceProvider.getInstance().getControlService().getStates().contains(States.ANALYSING)) {
-                	break;
-                }
+                //if (!ServiceProvider.getInstance().getControlService().getStates().contains(States.ANALYSING)) {
+                //	break;
+                //}
             } catch (Exception e) {
             	this.logger.error(new Date().toString() + " Exception:  " + e);
             	e.printStackTrace();
@@ -289,9 +289,9 @@ class FamixCreationPostProcessor {
             	}
             	
             	//Needed to check if Thread is allowed to continue
-                if (!ServiceProvider.getInstance().getControlService().getStates().contains(States.ANALYSING)) {
-                	break;
-                }
+                //if (!ServiceProvider.getInstance().getControlService().getStates().contains(States.ANALYSING)) {
+                //	break;
+                //}
             } catch (Exception e) {
             	this.logger.error(new Date().toString() + " Exception:  " + e);
             	e.printStackTrace();
@@ -761,9 +761,9 @@ class FamixCreationPostProcessor {
     			
                 calculateProgress();
                 //Needed to check if Thread is allowed to continue
-            	if (!ServiceProvider.getInstance().getControlService().getStates().contains(States.ANALYSING)) {
-                    break;
-            	}
+            	//if (!ServiceProvider.getInstance().getControlService().getStates().contains(States.ANALYSING)) {
+                //    break;
+            	//}
 
             } catch (Exception e) {
             	String associationType = association.type;
@@ -989,7 +989,7 @@ class FamixCreationPostProcessor {
     	int currentProgress = (++amountOfModulesConnected * 100) / this.numberOfWaitingObjects; 
     	if (currentProgress >= this.progressPercentage + 1){
     		progressPercentage = currentProgress;
-            ServiceProvider.getInstance().getControlService().updateProgress(progressPercentage);
+            //ServiceProvider.getInstance().getControlService().updateProgress(progressPercentage);
     	}
     }
     
