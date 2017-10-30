@@ -4,6 +4,10 @@ HUSACCT means: HU Software Architecture Compliance Checking Tool, where HU stand
 
 To download the build, watch an introduction video, or read user documentation, visit: http://husacct.github.io/HUSACCT/ 
 
+## Change in this Fork
+
+This fork has a hacked stripped functionallity, so its jar can be used as a library for other programs. So basically it is an architecture extraction tool. The GUI will not work anymore.
+
 ## Functionality
 
 HUSACCT provides support for software architecture compliance checking (SACC) of Java and C# systems. SACC monitors the conformance of the implemented architecture (in the source code) to the intended software architecture (in the system's design). 
